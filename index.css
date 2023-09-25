@@ -17,4 +17,124 @@ h1 {
   background-color: white;
   width: 100%;
   max-width: 900px;
+  border-radius: 24px;
+  padding: 0 64px 64px 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(200,175,275);
+  margin: 0 0 32px 0;
+  padding: 16px;
+}
+
+.tabs p {
+  padding: 8px;
+
+}
+
+.tabs p:hover {
+  color: rgb(83,49,156);
+  cursor: pointer;
+}
+
+.tabs .active {
+  color: rgb(83,49,156);
+  position: relative;
+}
+.tabs .active::before{
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: rgb(83,49,156);
+  position: absolute;
+  bottom: -18px;
+  z-index: 2;
+  left: -50%;
+  border-radius: 10px;
+}
+
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 85px;
+  right: 0;
+}
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  /*width: 50px;*/
+  margin: 0 20px;
+}
+
+.toggle {
+  background-color: rgb(83,49,156);
+  height: 42px;
+  width: 185px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px 0 16px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.toggle span:first-of-type {
+  color: whitesmoke;
+}
+
+.toggle span:last-of-type {
+  background-color: whitesmoke;
+  color: rgb(49,83,156);
+  padding: 6px 22px;
+  border-radius: 20px;
+}
+
+.season-card {
+  background-color: rgb(250,247,255);
+  text-align: center;
+  width: 50%;
+  padding: 32px;
+  text-transform: uppercase;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+.season-card p {
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+
+}
+
+.season-card .number {
+  color: rgb(83, 49, 156);
+  font-size: 54px;
+  margin: 0;
+}
+
+.description {
+  line-height: 32px;
+  margin: 16px 0 32px 0;
 }
