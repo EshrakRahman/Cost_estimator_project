@@ -120,6 +120,7 @@ h1 {
   text-transform: uppercase;
   margin: 16px 0;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .season-card p {
@@ -255,4 +256,27 @@ h1 {
   left: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .cards-container {
+    flex-wrap: wrap-reverse;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 18px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+
+  .season-card {
+    width: 100%;
+  }
 }
